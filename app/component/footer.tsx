@@ -9,7 +9,7 @@ const Footer = () => {
 
   return (
     <>
-      <ScrollAnimationWrapper>
+      <ScrollAnimationWrapper className="hidden lg:block">
         <motion.div className="container mx-auto text-center mb-[15px]" variants={scrollAnimation}>
           <div className="mt-[65px] mb-[15px] text-center">
             <h1 className="text-general-default text-xl font-display font-black mb-[13px]">

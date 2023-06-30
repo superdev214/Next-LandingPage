@@ -16,7 +16,7 @@ const Card = () => {
 
   return (
     <>
-      <ScrollAnimationWrapper>
+      <ScrollAnimationWrapper className="hidden lg:block">
         <section className="container mx-auto text-center mb-[15px]">
           <div className="flex flex-cols space-x-3.5 justify-center">
             <motion.div

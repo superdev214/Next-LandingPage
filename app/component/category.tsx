@@ -14,7 +14,7 @@ const Category = (props: any) => {
 
   return (
     <>
-      <ScrollAnimationWrapper>
+      <ScrollAnimationWrapper className="hidden lg:block">
         <motion.div variants={scrollAnimation}>
           <section className="container mx-auto text-center">
             <h4 className="text-general-default font-display font-bold text-xl my-5">
@@ -50,7 +50,7 @@ const Category = (props: any) => {
           </section>
         </motion.div>
       </ScrollAnimationWrapper>
-      <ScrollAnimationWrapper>
+      <ScrollAnimationWrapper className="hidden lg:block">
         <motion.div
           variants={scrollAnimation}
           className="pt-[85px] pb-[45px] text-center"

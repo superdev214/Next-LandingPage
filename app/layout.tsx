@@ -50,11 +50,11 @@ function RootLayout({
         <div
           className={
             "fixed top-0 w-full z-30 bg-white-500 transition-all " +
-            (scrollActive ? " shadow-md py-2" : " py-4")
+            (scrollActive ? " shadow-md pt-0" : " pt-4")
           }
         >
-          <nav className="container px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col">
-            <div className="col-start-1 col-end-2 flex items-center w-[50px] h-[50px]">
+          <nav className="hidden container px-6 sm:px-8 lg:px-16 mx-auto lg:grid grid-flow-col py-3 sm:py-4">
+            <div className="col-start-1 col-end-2 flex items-center">
               <Image
                 src={navIcon}
                 className="h-8 w-auto w-[50px] h-[50px]"
@@ -131,11 +131,23 @@ function RootLayout({
                 href="/"
                 className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all"
               >
-                <ButtonOutline>iOS APP</ButtonOutline> 
+              <ButtonOutline>iOS APP</ButtonOutline> 
               </Link>
               <ButtonOutline>WebApp</ButtonOutline>
             </div>
           </nav>
+          <div className="container mx-auto">
+            <nav className="lg:hidden flex flex-row w-full justify-between">
+              <Image
+                src={navIcon}
+                className="h-8 w-auto"
+                alt={"asdf"}
+                width={50}
+                height={50}
+              />
+              <Image src={saudiFlag} alt={"asdf"} width={24} height={24} />
+            </nav>
+          </div>
         </div>
         {children}
       </body>
