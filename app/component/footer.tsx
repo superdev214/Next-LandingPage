@@ -3,8 +3,10 @@ import React, { useMemo, useEffect } from "react";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "../utils/ScrollAnimationWrapper";
 import { motion } from "framer-motion";
+
 const Footer = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+
   return (
     <>
       <ScrollAnimationWrapper>

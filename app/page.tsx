@@ -21,17 +21,17 @@ export default function Home() {
   const [category, setCategory] = useState([]);
   useEffect(() => {
     getCategory().then((res) => {
-      console.log(res);
       setCategory(res);
     });
     //
   }, []);
   return (
-    <main>
-      <Test />
-      <Category category={category} />
-      <Card/>
-      <Footer/>
-    </main>
+
+      <main>
+        <Test />
+        <Category category={category} />
+        <Card/>
+        <Footer/>
+      </main>
   );
 }
