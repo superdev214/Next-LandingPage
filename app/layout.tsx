@@ -49,7 +49,7 @@ function RootLayout({
       <body className={inter.className}>
         <div
           className={
-            "fixed top-0 w-full z-30 bg-white-500 transition-all " +
+            "fixed top-0 w-full z-30 bg-white transition-all " +
             (scrollActive ? " shadow-md pt-0" : " pt-4")
           }
         >
@@ -57,7 +57,7 @@ function RootLayout({
             <div className="col-start-1 col-end-2 flex items-center">
               <Image
                 src={navIcon}
-                className="h-8 w-auto w-[50px] h-[50px]"
+                className="w-[50px] h-[50px]"
                 alt={"asdf"}
                 width={50}
                 height={50}
